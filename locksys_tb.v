@@ -12,7 +12,7 @@ initial begin
     #10;
 end
 initial begin
-    $monitor("%t|setpin=%b|inpin=%b|access=%b|alarm=%b",$time,setpin,inpin,access,alarm);
+    $monitor("%t|setpin=%b|inpin=%b|reset=%b enter=%b|access=%b|alarm=%b",$time,setpin,inpin,reset,enter,access,alarm);
     $dumpfile("locksys_dump.vcd");
     $dumpvars();
 end
