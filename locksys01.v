@@ -11,7 +11,7 @@ endmodule
 //E is opposite of the check
 module modN_ctr(clk,E,rstn,cnt,access,alarm);
 parameter N = 3; //3 wrong inputs 
-parameter width = 2; //binary width of 3
+parameter width = 2; //binary width of 3 is 2
 input clk,E,rstn;
 output reg access,alarm;
 output reg [width-1:0] cnt;
